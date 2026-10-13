@@ -57,5 +57,17 @@ public class StudiKasus2_26 {
             } else {
                 status = "PKM tidak lolos pendanaan. Dana tidak diberikan.";
             }
+} else if (jenisKegiatan.equalsIgnoreCase("LAINNYA")) {
+            status = "Kegiatan lainnya tidak mendapat dana penghargaan.";
+
+        } else {
+            status = "Jenis kegiatan tidak valid.";
+        }
+
+        System.out.println("Nama mahasiswa : " + nama);
+        System.out.println("Jenis kegiatan : " + jenisKegiatan);
+        System.out.println("Status         : " + status);
 
         sc.close();
+    }
+}
